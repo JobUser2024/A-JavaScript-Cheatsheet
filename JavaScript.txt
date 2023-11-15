@@ -1,0 +1,283 @@
+JavaScript: is a scripting language that helps you to create dynamic features that HTML and CSS can't do
+
+<script> js in a html doc
+
+src - link for the js file
+
+console.log() -> the output of the result
+
+API - a starting point to a system
+
+Variables:
+
+Data Types: string, number, null, boolean, NaN, undefined
+
+Arrays & Objects: can give a index number as its result
+
+new Array() - a creation of a Array
+
+function call() - a object method that is like on JAVA - public static void (String[]args){}
+
+getElementsByClassName() - a method that only work with div classes
+
+console.log(inputList[0].innerHTML) - > inputlist[0] = selects which text is first, innerHTML - the text 
+
+let, var - statements of variables but they are the same but "var" is a old school way
+
+const - constant its like "let" but the value cannot be changed
+
+alert() - a warning popup message
+
+Math Operators:
+
++ -> alert( 2 + 2 );
+
+- -> alert( 2 - 2 );
+
+* -> alert( 2 * 2 );
+
+/ -> alert( 2 / 2 );
+
+** -> alert( 2 ** 2 );
+
+String with Operators:
+
+let solution = "my" + "string";
+alert(solution);
+
+Increment and Decrement:
+
+++ 
+
+--
+
+let a = 3
+
+let f = a++; 
+
+alert(a) -> it would be 3 cause it doesnt allow 
+
+
+let a = 3
+
+let f = ++a; 
+
+alert(a) -> it allows cause it's postfix
+
+alert(++a) -> it can work inside the alert
+
+alert (2 * ++a) -> this too
+
+Bitwise operators:
+
+Commas - let a (1 + 2, 3 + 4)
+
+DOM: is a API with a document in a node and our tasks are creating a DOM and the manipulation of it
+
+Meaning of DOM: Document, Object, Model
+
+A tree of the DOM in HTMl: there are nodes like of it's attributes, docs, text and elements
+
+getElementByID(), querySelector()
+
+Access of selecting elements on a HTML/CSS doc are:
+
+One Node:
+querySelector() - selects a CSS selector
+getElementByID() - selects a HTML div id -> #
+
+Multiple Elements:
+getElementsByClassName() - selects all class names
+getElementByTagName()- selects all tag names
+querySelectorAll()- selects a selector on CSS that is equal with all selectors
+
+id.textContent - changing the name 
+
+teknologjia.innerHTML='HTML4 & HTML5'; - change of text
+
+var element = document.querySelector('.listTek:firstchild');
+syllabusi.style.color='blue'; - changing the text color
+
+var element1 = document.querySelector('.listTek:firstchild');
+syllabusi.style.background='red'; - changing the background color
+
+NodeLists:
+
+Nodelist - is a collection of node elements like item() - return nodes to the nodelist, length - the amount of elements on a nodelist
+
+var element2 = document.getElementsByTagName('li') - selects tag <li>
+
+var element3 = element.length - number of nodes are in the tag <li>
+
+console.log('numri i elementeve ne Nodelist jane: ',element2); - printing the result
+
+if (listElementet.length> 0) {
+var elementiTret = listElementet.item(2);
+//var elementiTret = listElementet[2];
+elementiTret.style.color='blue‘
+} - changing whichever text is placed on num.2, that turns into blue
+
+var paragrafet = document.getElementsByTagName('p'); - selecting the <p> tags
+
+for (let i=0;i<paragrafet.length;i++){
+paragrafet[i].style.backgroundColor='#77aa99'
+} - change of the background-color 
+
+var emriLendes= paragrafet.item(0).textContent="Dizajnimi i Ueb'it" - ndrimi i tekstit
+
+var elementet = document.getElementsByClassName('listTek'); - selects <listTek> tag
+
+if (elementet.length>0) {
+var el = elementet[2]; - selecting the 3rd element
+el.style.backgroundColor ='red'; change of the background color for the 3rd element
+}
+
+let rreshtatTEK=document.querySelectorAll('li:nth-child(odd)'); - selects from the css selector on li-list
+for (let i=0; i<rreshtatTEK.length;i++)
+{
+rreshtatTEK[i].style.backgroundColor='#d3d3d3'; - selects the 1st element and changes the element background color
+}
+
+Traversing the DOM - moving around the DOM
+
+Nodes of the DOM's tree have hierarchical relations with eachother, like parent, child and sibling are relations that in touch with relation's nodes
+
+Selecting the relations with elements can be like:
+
+Finding and selecting a element with a id
+
+Finding and selecting elements with sibling nodes
+
+Finding and selecting a parent or a kid node with a element
+
+Parent Nodes: is a node that is a level over a other node, they are 2 types: parentNode & parentElement
+
+parentNode code: - the parentNode is the <p> tag "titulliLenda" that is replaced by 'nyjaPrind_HTML'
+var nyjaPrind_HTML = document.getElementById('titulliLenda').parentNode;
+console.log(nyjaPrind_HTML);
+
+childNode code: firstChild is p01 that is femijaPare that will print the text on the html tag <p>
+var femijaPare = document.getElementById('p01').firstChild;
+console.log('Femija i pare: ',femijaPare);
+
+siblingNode code: same thing with firstChild but we added a nextSibling to our code
+var siblingFemija = document.getElementByID ('p01').firstChild.nextSibling
+console.log('siblingFemija: ' siblingFemija)
+console.log(siblingFemija.innerHTML ='Ky osht vellau i dyt')
+
+Access of the elements on JavaScript: selecting and giving access to a element must be from the DOM with a HTML Doc.
+
+Attributes: has, get, set and remove
+
+getAttribute() code: 
+var atributiIMG =img01.getAttribute("src"); - takes the result of the "src"
+
+setAttribute code:
+var ndryshoIMG =img01.setAttribute("src","iconeUeb02.png") - it takes the result from iconeUeb to iconeUeb02 that turns to iconeUeb02.png
+console.log(ndryshoIMG); e shfaq img: iconeUeb02.png
+
+Creating and deleting new HTML elements on JavaScript: it's a dynamic way with creating and deleting elements
+
+Elements: document.createElement(), deleteChild(), appendChild()- adding a html element, replaceChild()
+
+shtimiDIVneKont.style.color -> css element + javascript element
+
+document.body.onload = addElement; -> it makes it ready and uploads the html,css,jss element on the page.
+
+https://lb.ubt-uni.net/playback/presentation/2.3/eb3b286c40a95e528d53ea776eb51630d53b8bb9-1670585315376
+
+DOM Events:
+
+Event- is a program that responds to the actions of a user like clicking a button
+
+Type of form events: submit, cut, copy, submit, paste etc etc
+
+Event Binding with HTML Elements: There are 3 types of event binding that are ->
+
+1) handler on a HTML element -> <input type='button' value="Kliko ne" onclick="alert('handler në HTML-atribut!')"/>
+
+2) handler on DOM's properties -> 
+<input id=“elem1" type='button' value="Kliko ne" style="width:60px;"/>
+<script>
+elem1.onclick = ()=> { - elem1 -> element, onclick - event, () -> code
+alert('handler në vetit e DOM’it');
+};
+</script>
+
+3) DOM Event Listeners:
+<input id="elem2" type='button' value="Kliko ne" style="width:60px;"/>
+<script>
+var handler1=()=> {
+alert('Faleminderit nje here!');
+};
+var handler2=()=> {
+alert('Faleminderit dyta here!');
+};
+elem2.onclick = () => alert("Tung!"); 
+elem2.addEventListener("click", handler1); // FLM 1! - elem2 -> element, addEventListener, "click" -> event, handler1 -> code
+elem2.addEventListener("click", handler2); // FLM 2!
+</script>
+
+Creating the connection underneath the <head> tag:
+document.addEventListener("DOMContentLoaded",
+function(event){}
+
+Form Validation on JS: 
+its a common task for JS and its a script that controls the text and matches wit some rules that includes a @ for the email and numbers for a phone number
+it can work on the client (JS) and server (php, .net)
+Types of controlling the form: submit button that is valid and it has a true result for finishing for the form and false if u havent finished the form
+Method focus is controlled in a dynamic type and must be used on a form validation.
+
+Regex Pattern for a Email address:
+
+/^[a-zA-Z0-9._-]+ -> allows small to big words
+
+@ -> allows a email symbol
+
+[a-zA-Z0-9.-]+ -> allows dots and dashes
+
+\. -> has to have a dot
+
+[a-zA-Z]{2,4}$/ -> that allows a 2 letter word to 4 letter word like - org, com, net etc etc
+
+Creating regular expressions:
+
+re = /ab+c/ -> a text expression
+
+re = new RegExp("ab+c")  -> function of the constructor of RegEx
+
+Methods of Objects: 
+test() -> compile
+exec() -> search a string with a value and returns the text of the value
+match() -> Executes search, returns array.
+search() -> Tests for match, returns value.
+replace() -> Replaces matched substring.
+split() -> Breaks string into array.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
